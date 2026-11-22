@@ -10,357 +10,391 @@
 }
 
 html {
-    scroll-behavior: ;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0px ;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    color: ;
-    background-color: ;
-    line-height: ;
+    color: #7B354A;
+    background-color: #FFFDF9;
+    line-height: 1.6;
 }
 
 
 img {
-    display: flexbox;
-    width: 10px;
-    max-width: 400px ;
-    height: 10px;
-    object-fit: ;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
 }
 
 a {
-    color: ;
-    text-decoration: ;
+    color: #7B354A;
+    text-decoration: none;
 }
 
 ul {
-    list-style: ;
-    margin: ;
-    padding: ;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* 2. Contêiner e seções */
 .section {
-    width: ;
-    max-width: ;
-    margin: ;
-    padding: ;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
 .section-heading {
-    max-width: ;
-    margin: ;
-    text-align: ;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
 }
 
 .section-heading h2 {
-    margin: ;
-    font-family: ;
-    font-size: ;
+    margin: 0 0 15px;
+    font-family: Georgia, serif;
+    font-size: 32px;
 }
 
 .section-heading p {
-    color: ;
+    color: #9B6575;
 }
 
 /* 3. Cabeçalho e navegação */
 .site-header {
-    display: ;
-    justify-content: ;
-    align-items: ;
-    gap: ;
-    padding: ;
-    background-color: ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 40px;
+    background-color: #F5EBDD;
 }
 
 .logo {
-    font-size: ;
-    font-weight: ;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .main-nav ul {
-    display: ;
-    align-items: ;
-    gap: ;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 .main-nav a {
-    padding: ;
-    font-weight: ;
+    padding: 8px;
+    font-weight: bold;
 }
 
 .main-nav a:hover {
-    color: ;
+    color: #C98291;
 }
 
 /* 4. Banner principal */
 .hero {
-    display: ;
-    align-items: ;
-    justify-content: ;
-    gap: ;
-    padding: ;
-    background-color: ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: #F5EBDD;
 }
 
 .hero-content {
-    width: ;
-    max-width: ;
+    width: 50%;
+    max-width: 550px;
 }
 
 .eyebrow {
-    color: ;
-    font-size: ;
-    font-weight: ;
-    text-transform: ;
-    letter-spacing: ;
+    color: #C98291;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero h1 {
-    margin: ;
-    font-family: ;
-    font-size: ;
-    line-height: ;
+    margin: 15px 0;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    line-height: 1.2;
 }
 
 .hero-description {
-    font-size: ;
-    line-height: ;
+    font-size: 18px;
+    line-height: 1.8;
 }
 
 .hero-image {
-    width: ;
-    max-width: ;
+    width: 50%;
+    max-width: 500px;
 }
 
 .hero-image img {
-    width: ;
-    height: ;
-    object-fit: ;
-    border-radius: ;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 /* 5. Botões e links de ação */
 .button {
-    display: ;
-    align-items: ;
-    justify-content: ;
-    padding: ;
-    border: ;
-    border-radius: ;
-    font-weight: ;
-    text-align: ;
-    cursor: ;
-    transition: ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .button-primary {
-    color: ;
-    background-color: ;
+    color: #FFFDF9;
+    background-color: #7B354A;
 }
 
 .button-primary:hover {
-    background-color: ;
-    transform: ;
+    background-color: #5E2638;
+    transform: translateY(-2px);
 }
 
 .button-secondary {
-    color: ;
-    background-color: ;
+    color: #7B354A;
+    background-color: #E5C5CC;
 }
 
 .text-link {
-    color: ;
-    font-weight: ;
+    color: #C98291;
+    font-weight: bold;
 }
 
 /* 6. Cards de serviços */
 .service-grid {
-    display: ;
-    grid-template-columns: ;
-    gap: ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .service-card {
-    overflow: ;
-    background-color: ;
-    border-radius: ;
-    box-shadow: ;
+    overflow: hidden;
+    background-color: #FFFDF9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(123, 53, 74, 0.12);
 }
 
 .service-card img {
-    width: 250px;
-    height: 200PX;
-    object-fit: ;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-content {
-    padding: ;
+    padding: 25px;
 }
 
 .card-content h3 {
-    margin-top: ;
-    font-size: ;
+    margin-top: 0;
+    font-size: 22px;
 }
 
 /* 7. Seção sobre */
 .about {
-    display: ;
-    align-items: ;
-    gap: ;
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .about-image,
 .about-content {
-    width: ;
+    width: 50%;
 }
 
 .about-image img {
-    width: ;
-    height: ;
-    object-fit: ;
-    border-radius: ;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .about-content h2 {
-    font-size: ;
+    font-size: 32px;
 }
 
 /* 8. Diferenciais */
 .benefit-grid {
-    display: ;
-    grid-template-columns: ;
-    gap: ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .benefit-card {
-    padding: ;
-    text-align: ;
-    background-color: ;
-    border-radius: ;
+    padding: 30px;
+    text-align: center;
+    background-color: #F5EBDD;
+    border-radius: 12px;
 }
 
 .benefit-icon {
-    display: ;
-    font-size: ;
+    display: block;
+    font-size: 35px;
 }
 
 /* 9. Depoimentos */
 .testimonial-grid {
-    display: ;
-    grid-template-columns: ;
-    gap: ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .testimonial-card {
-    padding: ;
-    background-color: ;
-    border-left: ;
-    border-radius: ;
+    padding: 25px;
+    background-color: #F5EBDD;
+    border-left: 5px solid #C98291;
+    border-radius: 8px;
 }
 
 .testimonial-card blockquote {
-    margin: ;
-    line-height: ;
+    margin: 0;
+    line-height: 1.8;
 }
 
 .testimonial-author {
-    font-weight: ;
+    font-weight: bold;
 }
 
 .fictional-note {
-    font-size: ;
-    color: ;
+    font-size: 13px;
+    color: #9B6575;
 }
 
 /* 10. Contato e formulário */
 .contact {
-    display: ;
-    grid-template-columns: ;
-    gap: ;
-    background-color: ;
-    border-radius: ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #F5EBDD;
+    border-radius: 15px;
 }
 
 .contact-form {
-    display: ;
-    gap: ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-group {
-    display: ;
-    gap: ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .form-group label {
-    font-weight: ;
+    font-weight: bold;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: ;
-    padding: ;
-    border: ;
-    border-radius: ;
-    font: ;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E5C5CC;
+    border-radius: 8px;
+    font: inherit;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: ;
-    border-color: ;
+    outline: 2px solid #C98291;
+    border-color: #C98291;
 }
 
 .form-note {
-    font-size: ;
+    font-size: 14px;
 }
 
 /* 11. Rodapé */
 .site-footer {
-    padding: ;
-    text-align: ;
-    color: ;
-    background-color: ;
+    padding: 40px 20px;
+    text-align: center;
+    color: #FFFDF9;
+    background-color: #7B354A;
 }
 
 .footer-brand {
-    font-size: ;
-    font-weight: ;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .footer-copy {
-    font-size: ;
+    font-size: 14px;
 }
 
 /* 12. Responsividade
    Pesquise e escolha um ponto de quebra adequado.
    Dentro da media query, reorganize o menu, o banner,
    os cards, a seção sobre e o contato para telas estreitas. */
-@media (max-width: ) {
+@media (max-width: 768px) {
     .site-header {
-        /* Complete as propriedades necessárias */
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
     }
 
     .main-nav ul {
-        /* Complete as propriedades necessárias */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .hero {
-        /* Complete as propriedades necessárias */
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 300px;
     }
 
     .service-grid,
     .benefit-grid,
     .testimonial-grid {
-        /* Complete as propriedades necessárias */
+        grid-template-columns: 1fr;
     }
 
     .about,
     .contact {
-        /* Complete as propriedades necessárias */
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 300px;
     }
 }
